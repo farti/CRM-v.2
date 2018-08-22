@@ -22,7 +22,7 @@ namespace CRM.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Customer> Customers { get; set; }
-        //public DbSet<Address> Addresses { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<Gender> Genders { get; set; }
 
         public ApplicationDbContext()
